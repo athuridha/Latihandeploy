@@ -9,13 +9,17 @@ public class Main {
 
     public static void main(String[] args){
         try {
+            //Potensial untuk menghasilkan eksepsi
             int hasilPembagian = devide(10,2);
             System.out.println("Hasil pembagian: " + hasilPembagian);
         }
         catch (ArithmeticException e){
+            //Menangani eksepsi jika terjadi ArithmeticExeception (pembagian oleh nol)
             System.out.println("Terjadi kesalahan aritmatika: " + e.getMessage());
         }
-    } //finally {
-    //blok finally akan selalu dieksekusi , baik eksepsi terjadi atau tidak
-    //System.out.println("Selesai!");
+        finally {
+            System.out.println("Selesai");
+        }
+    }
+
 }
