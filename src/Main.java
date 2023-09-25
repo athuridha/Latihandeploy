@@ -15,6 +15,7 @@ public class Main {
         catch (ArithmeticException e){
             System.out.println("Terjadi kesalahan aritmatika: " + e.getMessage());
         }
-    }
-
+    } //finally {
+    //blok finally akan selalu dieksekusi , baik eksepsi terjadi atau tidak
+    //System.out.println("Selesai!");
 }
